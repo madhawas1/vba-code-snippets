@@ -1,0 +1,8 @@
+######## Get Last Folder Name from File Path ########
+
+Dim FolderPath, LastFolderName As String
+
+FolderPath = "D:\Downloading\TV\NG\Season 5"
+LastFolderName = Right(FolderPath, Len(FolderPath) - InStrRev(FolderPath, "\"))
+
+#####################################################
