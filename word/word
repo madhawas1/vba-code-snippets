@@ -3,4 +3,8 @@
 Dim count as Integer
 count = doc.ComputeStatistics(wdStatisticPages)
 
+######## Select Active Page #########################
+
+ActiveDocument.Bookmarks("\Page").Select
+
 #####################################################
