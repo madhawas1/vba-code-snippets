@@ -7,4 +7,8 @@ count = doc.ComputeStatistics(wdStatisticPages)
 
 ActiveDocument.Bookmarks("\Page").Select
 
+######## Delete Active Page #########################
+
+ActiveDocument.Bookmarks("\Page").Range.Delete
+
 #####################################################
