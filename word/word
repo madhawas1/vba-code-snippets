@@ -11,4 +11,9 @@ ActiveDocument.Bookmarks("\Page").Select
 
 ActiveDocument.Bookmarks("\Page").Range.Delete
 
+######## Get Last Pasted Shape #######################
+
+Selection.PasteSpecial Link:=False, Placement:=wdInLine, DataType:=wdPasteMetafilePicture
+Set pastedImage = doc.InlineShapes.Item(doc.InlineShapes.count - 1).ConvertToShape
+
 #####################################################
