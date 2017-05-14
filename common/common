@@ -5,11 +5,21 @@ Dim FolderPath, LastFolderName As String
 FolderPath = "D:\Downloading\TV\NG\Season 5"
 LastFolderName = Right(FolderPath, Len(FolderPath) - InStrRev(FolderPath, "\"))
 
-######## Get File Name Without Extension ###########
+######## Get File Name Without Extension ############
 
 Dim FileFullName, FileName As String
 
 FileFullName = "abc.png"
 FileName = Left$(FileFullName, InStrRev(FileFullName, ".") - 1)
+
+######## Check File Existance #######################
+
+Dim path As String
+
+If Len(Dir(path)) > 0 then
+  MsgBox("File Exists")
+Else
+  MsgBox("File Not Found")
+End If
 
 #####################################################
