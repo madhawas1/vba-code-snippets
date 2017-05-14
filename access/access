@@ -1,0 +1,5 @@
+######## Prevent Report Open #########################################
+
+Private Sub Report_Open(Cancel As Integer)
+  Cancel = True
+End Sub
