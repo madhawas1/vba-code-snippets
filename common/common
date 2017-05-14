@@ -12,7 +12,7 @@ Dim FileFullName, FileName As String
 FileFullName = "abc.png"
 FileName = Left$(FileFullName, InStrRev(FileFullName, ".") - 1)
 
-######## Check File Existance #######################
+######## Check File Existence #######################
 
 Dim path As String
 
